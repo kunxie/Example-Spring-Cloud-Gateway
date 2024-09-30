@@ -1,6 +1,5 @@
 package kunxie.personal.example.springcloudgateway.config;
 
-import jakarta.annotation.PostConstruct;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -14,7 +13,7 @@ import java.util.List;
 @ConfigurationProperties(prefix = "routing")
 public class RouteApiConfigs {
 
-  List<ApiConfig> apiConfigs;
+  private List<ApiConfig> apiConfigs;
 
   @Data
   public static class ApiConfig {
@@ -24,10 +23,5 @@ public class RouteApiConfigs {
     private String gatewayPathRegex;
     private String primaryUrl;
     private String secondaryUrl;
-  }
-
-  @PostConstruct
-  public void log() {
-    log.trace("created RouteApiConfigs: {}", apiConfigs);
   }
 }
