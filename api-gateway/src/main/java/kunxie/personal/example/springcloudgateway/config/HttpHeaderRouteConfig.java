@@ -16,7 +16,7 @@ import java.util.Set;
 @RefreshScope
 @Configuration
 @ConfigurationProperties(prefix = "routing.strategy-params.http-header")
-public class HttpHeaderPredicateConfig {
+public class HttpHeaderRouteConfig {
 
   private String name;
   private Set<String> candidates;
