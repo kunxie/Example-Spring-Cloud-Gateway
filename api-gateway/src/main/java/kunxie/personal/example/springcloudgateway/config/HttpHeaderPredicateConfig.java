@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Note: @jakarta.annotation.PostConstruct hook won't work with the refresh functionality.
@@ -19,5 +19,5 @@ import java.util.List;
 public class HttpHeaderPredicateConfig {
 
   private String name;
-  private List<String> candidates;
+  private Set<String> candidates;
 }
