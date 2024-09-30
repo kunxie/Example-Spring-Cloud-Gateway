@@ -1,6 +1,5 @@
 package kunxie.personal.example.springcloudgateway.config;
 
-import jakarta.annotation.PostConstruct;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -10,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
 /**
- * Note: @PostConstruct lifetime hook won't work with the refresh functionality.
+ * Note: @jakarta.annotation.PostConstruct hook won't work with the refresh functionality.
  */
 @Data
 @Slf4j
