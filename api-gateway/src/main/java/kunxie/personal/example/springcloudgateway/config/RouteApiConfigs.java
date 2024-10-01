@@ -21,7 +21,9 @@ public class RouteApiConfigs {
     private RouteStrategy routeStrategy;
     private String gatewayPath;
     private String gatewayPathRegex;
+    private String primaryRouteId;
     private String primaryUrl;
+    private String secondaryRouteId;
     private String secondaryUrl;
   }
 }
