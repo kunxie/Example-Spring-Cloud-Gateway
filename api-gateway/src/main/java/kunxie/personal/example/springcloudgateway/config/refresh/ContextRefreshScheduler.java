@@ -18,8 +18,7 @@ public class ContextRefreshScheduler {
   private final ConfigDataContextRefresher refresher;
 
   @Scheduled(fixedDelayString = "${refresh.interval.ms}")
-  public void refreshContext() {
-    log.trace("***** refresh the context at {}", LocalDateTime.now());
-    log.trace("***** refreshed properties: {}", refresher.refresh());
+  public void refreshContextPeriodically() {
+    log.trace("***** refresh the context at {} and refreshed properties: {}", LocalDateTime.now(), refresher.refresh());
   }
 }
