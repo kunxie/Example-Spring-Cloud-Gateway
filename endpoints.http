@@ -1,0 +1,24 @@
+### primary
+GET http://localhost:10001/api/example
+
+### primary
+GET http://localhost:10001/actuator
+
+### secondary
+GET http://localhost:10002/api/example
+
+### secondary
+GET http://localhost:10002/actuator
+
+### gateway
+GET http://127.0.0.1:8080/test-api/status/200
+X-STORE-NUMBER: 100
+
+### debug endpoints
+GET http://127.0.0.1:8080/test-route/status/200
+X-HTTP-HEADER: secondary-1
+
+### debug endpoints
+GET localhost:8080/debug/log/httpHeaderRouteConfig
+### debug endpoints
+GET localhost:8080/debug/log/routeApiConfigs

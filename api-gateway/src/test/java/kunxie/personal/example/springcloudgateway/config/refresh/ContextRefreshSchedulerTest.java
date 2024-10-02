@@ -1,5 +1,6 @@
 package kunxie.personal.example.springcloudgateway.config.refresh;
 
+import kunxie.personal.example.springcloudgateway.refresh.ContextRefreshScheduler;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

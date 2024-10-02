@@ -1,5 +1,7 @@
-package kunxie.personal.example.springcloudgateway.config;
+package kunxie.personal.example.springcloudgateway.route;
 
+import kunxie.personal.example.springcloudgateway.config.RouteApiConfigs;
+import kunxie.personal.example.springcloudgateway.config.RouteStrategy;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;

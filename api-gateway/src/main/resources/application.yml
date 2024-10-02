@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+logging:
+  level:
+    root: WARN
+    reactor.netty.http.client: DEBUG
+    org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping: DEBUG
+#    org.springframework.http.client: DEBUG
+    kunxie.personal.example.springcloudgateway.config.RouteApiConfigs: TRACE
+#    kunxie.personal.example.springcloudgateway.config.refresh: TRACE

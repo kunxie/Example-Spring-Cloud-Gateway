@@ -1,5 +1,6 @@
-package kunxie.personal.example.springcloudgateway.config;
+package kunxie.personal.example.springcloudgateway.predicate;
 
+import kunxie.personal.example.springcloudgateway.config.HttpHeaderRouteConfig;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

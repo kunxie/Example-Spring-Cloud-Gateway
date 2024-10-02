@@ -1,4 +1,4 @@
-package kunxie.personal.example.springcloudgateway.config.refresh;
+package kunxie.personal.example.springcloudgateway.refresh;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
